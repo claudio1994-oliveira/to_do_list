@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import TodosIndex from '@/views/Todos/TodosIView.vue'
+import TodosCreate from '@/views/Todos/CreateView.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/todos',
     name: 'todos.index',
     component: TodosIndex
+  },
+  {
+    path: '/todos/create',
+    name: 'todos.create',
+    component: TodosCreate
   },
   {
     path: '/about',

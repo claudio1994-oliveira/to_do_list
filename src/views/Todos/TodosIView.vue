@@ -1,5 +1,5 @@
 <template>
-    <h1>Lista de tarefas</h1>
+    <h1>Lista de tarefas <router-link :to="{name: 'todos.create'}"  >+</router-link> </h1>
 
     <div v-if="loading">
         Carregando ...
