@@ -6,8 +6,13 @@
     </div>
     <ul>
         <li v-for="todo in todos" :key="todo.identify">
-            {{ todo.title }}
-            {{ todo.body }}
+          <p>
+            <b>Título:</b> Título: {{ todo.title }}
+          </p> 
+          <p>
+            <b>Descrição:</b>  {{ todo.body }}
+          </p>
+            
         </li>
     </ul>
 </template>
